@@ -1,5 +1,5 @@
 const getProducts = () =>{
-    axios.get('http://15.228.204.169:3000/produtos')
+    axios.get('http://54.233.220.169:3000/produtos')
     .then(response => {
         const products = response.data;
         console.log(products);
@@ -33,7 +33,7 @@ const getProducts = () =>{
     });
 }
 function deleteProduct(productId) {
-    axios.delete(`http://15.228.204.169:3000/produtos/${productId}`)
+    axios.delete(`http://54.233.220.169:3000/produtos/${productId}`)
         .then(response => {
             console.log('Product deleted:', response.data);
         })
@@ -52,7 +52,7 @@ function editProduct(productId, currentName, currentPrice) {
             name: newName,
             price: parseFloat(newPrice)
         };
-        axios.put(`http://15.228.204.169:3000/produtos/${productId}`, updatedProduct)
+        axios.put(`http://54.233.220.169:3000/produtos/${productId}`, updatedProduct)
             .then(response => {
                 console.log('Product updated:', response.data);
             })
@@ -73,7 +73,7 @@ function addProduct() {
             name: name,
             price: price
         };
-        axios.post('http://15.228.204.169:3000/produtos', newProduct)
+        axios.post('http://54.233.220.169:3000/produtos', newProduct)
             .then(response => {
                 console.log('Product created:', response.data);
                 nameInput.value = '';
