@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1 class="title">Product Management</h1>
+    <div class="container">
+        <form class="productForm" id="createProductForm">
+            <div class="nameForm">
+                <label for="name">Name</label>
+                <input class="inputForm" type="text" id="name" required>
+            </div>
+            <div class="priceForm">
+                <label for="price">Price</label>
+                <input class="inputForm" id="price" step="0.01" required>
+            </div>
+            <div class="btnContainer">
+                <button class="btnForm" type="submit">Create</button>
+            </div>
+        </form>
+        <div class="tableContainer">
+            <table class="table">
+                <thead>
+                    <tr class="tableRow">
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th class="text-red-50">Editar</th>
+                        <th class="font-bolder">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody id="table-products">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

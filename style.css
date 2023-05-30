@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body{
+    background-color: rgb(24 24 27);
+    color: white;
+}
+
+.title{
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container{
+    background-color: rgb(23 37 84);
+    border-radius: 0.75rem;
+    max-width: 36rem;
+    width: 100%;
+    margin: auto;
+}
+
+.productForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem 0 1.25rem 0;
+}
+
+.nameForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.priceForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm{
+    border-radius: 0.5rem;
+    border-width: 2px;
+    border-color: rgb(161 161 170);
+    padding-left: 0.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    color: black;
+    outline: none;
+    border-style: solid;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+}
+.btnForm{
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: rgb(34 197 94);
+    color: white;
+    padding: 0.5rem;
+    border-width: 0;
+    border-style: solid;
+}
+.tableContainer{
+    width: auto;
+}
+.table{
+    width: 100%;
+}
+.tableRow{
+    border-bottom: 1px;
+
+}
+.btnUpdate{
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: rgb(59 130 246);
+    color: white;
+    padding: 0.5rem;
+    border-width: 0;
+    border-style: solid;
+}
+.btnDelete{
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: rgb(239 68 68);
+    color: white;
+    padding: 0.5rem;
+    border-width: 0;
+    border-style: solid;
+}
